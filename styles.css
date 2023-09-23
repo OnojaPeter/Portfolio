@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+    font-family: "lora-regular", serif;
+    /* font-size: 1.7rem; */
+    font-style: normal;
+    font-weight: normal;
+    /* line-height: 1.765; */
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2,  h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+p.lead {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    /* line-height: 1.8; */
+    /* margin-bottom: 3.6rem; */
+    color: #000000;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background: green;
+}
+
+.landingPage{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .footer-logo{
+    height: 100px;
+    width: 100px;
+} */
