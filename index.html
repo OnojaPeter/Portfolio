@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <nav class="navbar fixed-top">
+  <nav class="navbar fixed-top" style="background: white;">
     <div class="container-fluid">
       <a style="font-weight: 900; font-size: 1.5rem;" class="navbar-brand" href="index.html">OnojaPeter</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -52,14 +52,18 @@
 
 
 
-  <div class="container landingPage col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row align-items-center g-5 py-5">       
-        <div class="">
-          <h1 class="display-5  lh-1 mb-3">Nice to meet you! <br>i'm <span>Onoja Peter.</span></h1>
+  <div class="container landingPage col-xxl-8 px-4 py-1">
+      <div class="row flex-lg-row align-items-center g-5 py-1">       
+        <div class="col-lg-6">
+          <h1 class="  lh-3 mb-3">Nice to meet you! <br>i'm <span style="color: aqua;">Onoja Peter.</span></h1>
           <p class="lead">I'm a Front-End developer passionate about building websites that users love.</p>
           <div class="d-block d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">My Projects</button>           
+            <button type="button" id="myProjectButton" class="btn btn-primary btn-lg px-4 me-md-2">My Projects</button>           
           </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <img width="100%" height="100%" src="images/Screenshot (11).png">
         </div>
       </div>
   </div>
@@ -79,7 +83,86 @@
     </div>
   </div>
 
-  <div class="my-5">
+
+  <div class="container">
+    <div class="row justify-content-center mb-2 p-2">
+      <div class="col-md-7 col-10 heading-section text-center">
+        <h1 class="mb-2">SKILLS</h1>
+      </div>
+    </div>
+
+    <div class="row d-flex contact-info mb-3">
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">     
+          </div>
+          <h3 class="mb-3">HTML5</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">CSS3</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">Bootstrap</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">Tailwind CSS</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">JavaScript</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">NodeJS</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">jQuery</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">Git & GitHub</h3>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+        <div class="align-self-stretch box p-4 text-center">
+          <div class="icon d-flex align-items-center justify-content-center">
+          </div>
+          <h3 class="mb-3">jQuery</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="my-5" id="project-section">
     <div class="p-2">
       <div class="container py-2 text-start text-lg-center">
         <h1 class="">My Projects</h1>
@@ -191,7 +274,7 @@
   <div class="container">
     <div class="row justify-content-center mb-2 p-2">
       <div class="col-md-7 col-10 heading-section text-center">
-        <h2 class="mb-2">Contact Me</h2>
+        <h1 class="mb-2">Contact Me</h1>
         <p class="lead">You can reach me via any of the channels below</p>
       </div>
     </div>
@@ -237,6 +320,7 @@
 
   </div>
     
+  <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
